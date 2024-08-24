@@ -4,7 +4,7 @@ import { ChartNoAxesCombined } from "lucide-react";
 const Stats = () => {
   return (
     <>
-      <div className="my-16">
+      <div className="mt-16 mb-24">
         <div className="container">
           <div className="justify-center flex items-center gap-2">
             <ChartNoAxesCombined

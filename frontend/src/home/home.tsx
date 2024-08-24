@@ -1,4 +1,5 @@
 import Hero from "@/sections/hero/hero";
+import Servicos from "@/sections/servicos/servicos";
 import Stats from "@/sections/stats/stats";
 
 const Home = () => {
@@ -6,6 +7,7 @@ const Home = () => {
     <>
       <Hero />
       <Stats />
+      <Servicos />
     </>
   );
 };
