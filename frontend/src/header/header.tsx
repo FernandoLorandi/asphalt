@@ -47,14 +47,12 @@ const Header = () => {
                     <NavItem>Compliance</NavItem>
                     <NavItem>Blog</NavItem>
                     <NavItem>Contato</NavItem>
-
                   </li>
                 </ul>
               </nav>
-              <Button className="font-semibold bg-brand-primary-950 hover:bg-brand-primary-900">
+              <Button className="font-medium bg-brand-primary-950 hover:bg-brand-primary-900">
                 Entrar em contato
               </Button>
-              
             </div>
           </div>
         </header>

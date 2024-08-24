@@ -1,10 +1,13 @@
-import Hero from "@/hero/hero"
-
+import Hero from "@/sections/hero/hero";
+import Stats from "@/sections/stats/stats";
 
 const Home = () => {
-    return (
-        <Hero /> 
-    )
-}
+  return (
+    <>
+      <Hero />
+      <Stats />
+    </>
+  );
+};
 
-export default Home
+export default Home;
