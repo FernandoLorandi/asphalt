@@ -17,6 +17,34 @@ module.exports = {
       },
     },
     extend: {
+      brand:{
+        primary:{
+          50:"#EDF2FF",
+          100:"#DFE6FF",
+          200:"#C5D2FF",
+          300:"#A2B3FF",
+          400:"#7D8AFC",
+          500:"#5E63F6",
+          600:"#5E63F6",
+          700:"#3D33CF",
+          800:"#3D33CF",
+          900:"#2D2B84",
+          950:"#1F1C55",
+        },
+        secondary:{
+          50:"#FFFAEA",
+          100:"#FFEEC5",
+          200:"#FFDC85",
+          300:"#FFC346",
+          400:"#FFAB1B",
+          500:"#F07D00",
+          600:"#E26000",
+          700:"#BB3E02",
+          800:"#983008",
+          900:"#7C280B",
+          950:"#481100",
+        }
+      },
       colors: {
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
