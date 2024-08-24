@@ -1,7 +1,9 @@
+import Header from "./header/Header"
+
 function App() {
 
   return (
-  <div className='text-5xl text-brand-primary-50 '>Teste</div>
+  <Header />
   )
 }
 
