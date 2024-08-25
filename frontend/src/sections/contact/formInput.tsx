@@ -4,13 +4,14 @@ import { Label } from "@/components/ui/label";
 type Props = {
   label?: string;
   placeholder?: string;
+  type?: string;
 };
 
-const FormInput = ({ label, placeholder }: Props) => {
+const FormInput = ({ label, placeholder, type }: Props) => {
   return (
     <div>
       <Label className="text-slate-950 font-normal">{label}</Label>
-      <Input placeholder={placeholder} className="mt-2" />
+      <Input type={type} placeholder={placeholder} className="mt-2" />
     </div>
   );
 };

@@ -4,7 +4,7 @@ import CardBlog from "./cardBlog";
 const Blog = () => {
   return (
     <>
-      <div className="mt-10 bg-brand-secondary-500 py-10 border-t-8 border-brand-primary-900">
+      <div className="mt-10 bg-brand-secondary-500 py-10 border-t-8 border-brand-primary-950">
         <div className="container flex flex-col">
           <span className="text-white font-light mb-3 italic">Data</span>
           <span className=" text-4xl text-white font-semibold inline-flex items-center gap-3">

@@ -8,8 +8,7 @@ type Props = {
 
 const CardBlog = ({ title, description }: Props) => {
   return (
-    <>
-      <div className="border rounded-sm border-slate-200 flex flex-col hover:drop-shadow-lg hover:transition-all">
+    <div className="border rounded-sm border-slate-200 flex flex-col hover:drop-shadow-lg hover:transition-all">
         <img
           src="/img/img-card.jpg"
           alt=""
@@ -30,7 +29,6 @@ const CardBlog = ({ title, description }: Props) => {
           </Button>
         </div>
       </div>
-    </>
   );
 };
 
