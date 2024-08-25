@@ -59,7 +59,7 @@ const Compliance = () => {
           </div>
         </div>
       </div>
-      <div className="w-full max-w-xl bg-brand-primary-900 py-14 flex">
+      <div className="w-full max-w-xl bg-brand-primary-950 py-14 flex">
         <div className="w-full pl-12 flex flex-col justify-between h-auto">
           <div>
             <div className="text-brand-secondary-500 font-semibold text-sm uppercase">

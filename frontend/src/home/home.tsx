@@ -5,6 +5,7 @@ import Partners from "@/sections/partners/partners";
 import Servicos from "@/sections/services/servicos";
 import Stats from "@/sections/stats/stats";
 import Contact from "@/sections/contact/contact";
+import Footer from "@/sections/footer/footer";
 
 const Home = () => {
   return (
@@ -16,6 +17,7 @@ const Home = () => {
       <Compliance />
       <Blog />
       <Contact />
+      <Footer />
     </>
   );
 };

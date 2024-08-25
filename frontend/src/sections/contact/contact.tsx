@@ -50,7 +50,7 @@ const Contact = () => {
               </Button>
               <Button
                 size="sm"
-                className="gap-2 rounded-sm| bg-brand-primary-950 hover:bg-brand-primary-900"
+                className="gap-2 rounded-sm bg-brand-primary-950 hover:bg-brand-primary-900"
               >
                 Enviar
                 <MoveRight size={16} />

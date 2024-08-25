@@ -7,7 +7,7 @@ type Props = {
 
 const NavItem = ({ children }: Props) => {
   return (
-    <li className="text-slate-950 text-base font-normal hover:font-semibold  transition-all ">
+    <li className="text-slate-950 text-base font-normal hover:font-semibold hover:text-brand-primary-900  transition-all ">
       <Link to="to" className="py-2 px-2 inline-block">
         {children}
       </Link>
