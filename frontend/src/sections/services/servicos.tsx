@@ -4,8 +4,8 @@ const Servicos = () => {
   return (
     <>
       <div className="mx-auto flex flex-col lg:flex-row md:flex-col border-t border-slate-200">
-        <div className="bg-brand-primary-950 pb-10 lg:h-auto md:h-auto">
-          <div className="pl-8 lg:pl-24 md:pl-12">
+        <div className="bg-brand-primary-900 pb-10 lg:h-auto md:h-auto">
+          <div className="pl-8 md:pl-12 lg:ml-56">
             <div className="flex flex-col pr-8 pt-14 gap-3">
               <div>
                 <p className="text-brand-secondary-500 uppercase text-sm font-semibold">

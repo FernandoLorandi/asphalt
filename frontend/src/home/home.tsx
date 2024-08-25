@@ -1,5 +1,7 @@
+import Compliance from "@/sections/compliance/compliance";
 import Hero from "@/sections/hero/hero";
-import Servicos from "@/sections/servicos/servicos";
+import Partners from "@/sections/partners/partners";
+import Servicos from "@/sections/services/servicos";
 import Stats from "@/sections/stats/stats";
 
 const Home = () => {
@@ -8,6 +10,8 @@ const Home = () => {
       <Hero />
       <Stats />
       <Servicos />
+      <Partners />
+      <Compliance />
     </>
   );
 };
