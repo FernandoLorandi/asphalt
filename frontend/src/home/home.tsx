@@ -1,3 +1,4 @@
+import Blog from "@/sections/blog/blog";
 import Compliance from "@/sections/compliance/compliance";
 import Hero from "@/sections/hero/hero";
 import Partners from "@/sections/partners/partners";
@@ -12,6 +13,7 @@ const Home = () => {
       <Servicos />
       <Partners />
       <Compliance />
+      <Blog />
     </>
   );
 };
