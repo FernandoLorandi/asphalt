@@ -2,6 +2,7 @@ import { Home, Mail } from "lucide-react";
 import { Separator } from "@/components/ui/separator";
 import { Button } from "@/components/ui/button";
 import NavItem from "./navItem";
+import SheetMenu from "./sheetMenu";
 
 const Header = () => {
   return (
@@ -30,13 +31,16 @@ const Header = () => {
 
       <header className=" bg-white border-b border-slate-200 py-6">
         <div className="container">
-          <div className="flex flex-wrap items-center justify-center lg:justify-between gap-3">
+          <div className="flex flex-wrap items-center justify-between md:justify-between lg:justify-between gap-3">
             <img
               src="/img/logo-invert.png"
               alt="Logotipo Asphalt"
               className="w-48 h-full object-contain"
             />
-            <nav>
+            <div className="lg:hidden xl:hidden">
+              <SheetMenu></SheetMenu>
+            </div>
+            <nav className=" hidden md:hidden lg:flex">
               <ul className="flex flex-wrap items-center justify-center  py-2 px-4">
                 <li className="flex flex-wrap items-center justify-center gap-2 py-2 px-4">
                   <NavItem>Início</NavItem>
@@ -48,7 +52,7 @@ const Header = () => {
                 </li>
               </ul>
             </nav>
-            <Button className="font-medium bg-brand-primary-950 hover:bg-brand-primary-900">
+            <Button className=" hidden md:hidden lg:flex lg:font-medium bg-brand-primary-950 hover:bg-brand-primary-900">
               Entrar em contato
             </Button>
           </div>
