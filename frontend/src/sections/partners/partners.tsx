@@ -1,3 +1,5 @@
+import { PartnersCard } from "./partnersCard";
+
 const Partners = () => {
   return (
     <div className="bg-slate-50 w-full py-24">
@@ -16,7 +18,8 @@ const Partners = () => {
             inovação e sucesso.
           </p>
         </div>
-        <div className="flex w-full justify-between gap-8">
+        <PartnersCard />
+        {/* <div className="flex w-full justify-between gap-8">
           <img
             src="/img/sanepar.png"
             alt="Logotipo Sanepar"
@@ -47,7 +50,7 @@ const Partners = () => {
             alt="Logotipo Viapar"
             className="h-36 w-full border border-slate-200 rounded-sm"
           />
-        </div>
+        </div> */}
       </div>
     </div>
   );
