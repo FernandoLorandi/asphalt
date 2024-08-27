@@ -5,8 +5,8 @@ import { Download, MoveRight } from "lucide-react";
 const Compliance = () => {
   return (
     <div className=" flex">
-      <div className="flex py-14 ml-8 xl:ml-8 lg:ml-8 md:ml-0">
-        <div className="container flex flex-wrap pl-0 xl:pl-56 lg:pl-8 md:pl-8">
+      <div className="flex py-14 ml-8 xl:ml-auto lg:ml-8 md:ml-0 ">
+        <div className="container flex flex-wrap pl-0 xl:pl-16 lg:pl-8 md:pl-8">
           <div className="flex w-full max-w-7xl flex-wrap flex-col space-y-10">
             <div className="flex flex-col">
               <p className="uppercase text-sm text-brand-secondary-500 font-semibold">

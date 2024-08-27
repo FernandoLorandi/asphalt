@@ -3,6 +3,7 @@ import {
   Sheet,
   SheetClose,
   SheetContent,
+  SheetDescription,
   SheetFooter,
   SheetHeader,
   SheetTitle,
@@ -16,23 +17,43 @@ const SheetMenu = () => {
   return (
     <Sheet>
       <SheetTrigger asChild>
-        <Button variant="outline">
-          <Menu size={16} className="text-brand-primary-900" />
+        <Button
+          variant="default"
+          className="font-medium bg-brand-primary-950 hover:bg-brand-primary-900 gap-4"
+        >
+          Menu
+          <Menu size={16} className="text-white" />
         </Button>
       </SheetTrigger>
       <SheetContent>
         <SheetHeader>
-          <SheetTitle className="text-left">Menu</SheetTitle>
+          <SheetTitle className="text-left pl-2">Menu</SheetTitle>
+          <SheetDescription className="text-left pl-2">
+            {" "}
+            Selecione abaixo a opção que deseja acessar
+          </SheetDescription>
           <Separator className="opacity-50" />
         </SheetHeader>
         <ul className=" items-center justify-center">
           <li className="items-center justify-center gap-2">
-            <NavItem classname="pl-0">Início</NavItem>
-            <NavItem classname="pl-0">Empresa</NavItem>
-            <NavItem classname="pl-0">Serviços</NavItem>
-            <NavItem classname="pl-0">Compliance</NavItem>
-            <NavItem classname="pl-0">Blog</NavItem>
-            <NavItem classname="pl-0">Contato</NavItem>
+            <NavItem classname="hover:bg-brand-primary-50 w-full rounded-md">
+              Início
+            </NavItem>
+            <NavItem classname="hover:bg-brand-primary-50 w-full rounded-md">
+              Empresa
+            </NavItem>
+            <NavItem classname="hover:bg-brand-primary-50 w-full rounded-md">
+              Serviços
+            </NavItem>
+            <NavItem classname="hover:bg-brand-primary-50 w-full rounded-md">
+              Compliance
+            </NavItem>
+            <NavItem classname="hover:bg-brand-primary-50 w-full rounded-md">
+              Blog
+            </NavItem>
+            <NavItem classname="hover:bg-brand-primary-50 w-full rounded-md">
+              Contato
+            </NavItem>
           </li>
         </ul>
         <SheetFooter>
