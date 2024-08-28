@@ -17,7 +17,7 @@ const Blog = () => {
           </span>
         </div>
       </div>
-      <div className="container py-12 gap-8 flex flex-wrap md:flex-wrap lg:flex-nowrap ">
+      <div className="container py-12 gap-8 flex flex-wrap md:flex-nowrap lg:flex-nowrap ">
         <CardBlog
           title="Conservação de pavimento"
           description="Oferecemos manutenção e reparos especializados para conservar e prolongar a vida útil dos pavimentos asfaltados. Nossos serviços garantem durabilidade e desempenho superior, mantendo suas superfícies em excelente estado."

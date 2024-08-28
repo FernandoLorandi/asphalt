@@ -5,12 +5,14 @@ const Footer = () => {
     <div className="bg-brand-primary-950 pt-6 pb-10">
       <div className="container ">
         <div className="flex gap-4 justify-center">
-          <div className="text-right text-white text-sm font-light">
-            <img
-              src="/img/logo-default.png"
-              alt=""
-              className="h-auto w-56 ml-auto"
-            />
+          <div
+            className=" text-center space-y-2 md:space-x-0
+           md:text-right text-white text-sm font-light"
+          >
+            <div className=" flex  justify-center md:justify-end">
+              <img src="/img/logo-default.png" alt="" className="h-auto w-56" />
+            </div>
+
             <p>Rua Marechal Deodoro, nº 893, 2º andar, sala 12</p>
             <p>84400-000</p>
             <p>Prudentópolis, Paraná</p>
@@ -18,9 +20,9 @@ const Footer = () => {
           </div>
           <Separator
             orientation="vertical"
-            className="h-auto text-white opacity-10"
+            className="h-auto text-white opacity-10 hidden md:flex"
           />
-          <div className="mt-auto">
+          <div className="mt-auto hidden md:flex md:flex-col">
             <p className="text-brand-secondary-500 font-medium text-lg pb-1">
               Acesso rápido
             </p>

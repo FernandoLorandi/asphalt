@@ -3,8 +3,8 @@ import CardServicos from "./cardServicos";
 const Servicos = () => {
   return (
     <div className="mx-auto flex flex-col lg:flex-row md:flex-col border-t border-slate-200">
-      <div className="bg-brand-primary-950 pb-10 w-full max-w-full md:max-w-full py-14 flex">
-        <div className="pl-8 xl:pl-16 xl:ml-auto md:pl-12 lg:ml-8">
+      <div className="bg-brand-primary-950 pb-10 w-full max-w-full md:max-w-full lg:max-w-3xl flex">
+        <div className="pl-8 xl:ml-8 2xl:ml-56 md:ml-6 lg:ml-8">
           <div className="flex flex-col pr-8 pt-14 gap-3">
             <div>
               <p className="text-brand-secondary-500 uppercase text-sm font-semibold">

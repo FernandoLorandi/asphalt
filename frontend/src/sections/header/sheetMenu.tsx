@@ -19,7 +19,7 @@ const SheetMenu = () => {
       <SheetTrigger asChild>
         <Button
           variant="default"
-          className="font-medium bg-brand-primary-950 hover:bg-brand-primary-900 gap-4"
+          className="font-medium bg-brand-primary-900 hover:bg-brand-primary-950 gap-4"
         >
           Menu
           <Menu size={16} className="text-white" />

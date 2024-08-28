@@ -16,7 +16,9 @@ const CardBlog = ({ title, description }: Props) => {
       />
       <div className=" bg-white px-6 pt-3 pb-4 rounded-b-sm">
         <h2 className="text-slate-950 font-semibold text-2xl">{title}</h2>
-        <p className="text-sm text-slate-600 mt-3">{description}</p>
+        <p className="text-sm text-slate-600 mt-3 line-clamp-3">
+          {description}
+        </p>
         <div className="mt-3 flex items-center gap-2">
           <CalendarFold size={16} className="text-slate-600" />
           <p className="text-slate-600 font-normal text-sm">25/09</p>

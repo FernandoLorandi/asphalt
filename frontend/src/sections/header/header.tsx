@@ -7,7 +7,7 @@ import SheetMenu from "./sheetMenu";
 const Header = () => {
   return (
     <div>
-      <div className="bg-brand-primary-50 text-sm font-normal text-brand-primary-950 border-b border-slate-200">
+      <div className="hidden md:flex bg-brand-primary-50 text-sm font-normal text-brand-primary-950 border-b border-slate-200">
         <div className="container py-3">
           <div className="flex flex-wrap items-center justify-center gap-4">
             <div className="flex items-center">
@@ -29,13 +29,13 @@ const Header = () => {
         </div>
       </div>
 
-      <header className=" bg-white border-b border-slate-200 py-6">
+      <header className=" bg-white border-b border-slate-200 py-6 ">
         <div className="container">
           <div className="flex flex-wrap items-center justify-between md:justify-between lg:justify-between gap-3">
             <img
               src="/img/logo-invert.png"
               alt="Logotipo Asphalt"
-              className="w-48 h-full object-contain"
+              className="w-36 md:w-48 h-full object-contain"
             />
             <div className="lg:hidden xl:hidden">
               <SheetMenu></SheetMenu>
@@ -52,7 +52,7 @@ const Header = () => {
                 </li>
               </ul>
             </nav>
-            <Button className=" hidden md:hidden lg:flex lg:font-medium bg-brand-primary-950 hover:bg-brand-primary-900">
+            <Button className=" hidden md:hidden lg:flex lg:font-medium bg-brand-primary-900 hover:bg-brand-primary-950">
               Entrar em contato
             </Button>
           </div>

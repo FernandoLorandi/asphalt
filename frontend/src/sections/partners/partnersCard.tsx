@@ -1,4 +1,3 @@
-import { Card, CardContent } from "@/components/ui/card";
 import {
   Carousel,
   CarouselContent,
@@ -27,7 +26,7 @@ export function PartnersCard() {
         {logos.map((logos: string) => (
           <CarouselItem
             key={logos}
-            className="basis-1/3 md:basis-1/4 lg:basis-1/6 w-auto flex"
+            className="basis-1/2 md:basis-1/4 lg:basis-1/6 w-auto flex"
           >
             <div className="w-64 h-auto">
               <img
