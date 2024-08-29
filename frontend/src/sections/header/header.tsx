@@ -43,8 +43,8 @@ const Header = () => {
             <nav className=" hidden md:hidden lg:flex">
               <ul className="flex flex-wrap items-center justify-center  py-2 px-4">
                 <li className="flex flex-wrap items-center justify-center gap-2 py-2 px-4">
-                  <NavItem>Início</NavItem>
-                  <NavItem>Empresa</NavItem>
+                  <NavItem to="/home">Início</NavItem>
+                  <NavItem to="/empresa">Empresa</NavItem>
                   <NavItem>Serviços</NavItem>
                   <NavItem>Compliance</NavItem>
                   <NavItem>Blog</NavItem>
