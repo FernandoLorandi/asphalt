@@ -4,12 +4,13 @@ import { z } from "zod";
 
 import { Textarea } from "@/components/ui/textarea";
 import { Button } from "@/components/ui/button";
-import { MoveRight } from "lucide-react";
+import { Info, MoveRight } from "lucide-react";
 import { Input } from "@/components/ui/input";
 
 import {
   Form,
   FormControl,
+  FormDescription,
   FormField,
   FormItem,
   FormLabel,
@@ -86,7 +87,7 @@ const Contact = () => {
 
   return (
     <div className="w-full py-24 border-y border-slate-200 bg-slate-50">
-      <div className="container gap-10 flex flex-row justify-between">
+      <div className="container gap-10 flex flex-col md:flex-row justify-between">
         {/* titulo */}
         <div className="flex flex-col gap-1 w-full">
           <p className="text-brand-primary-600 font-semibold text-sm uppercase">
@@ -171,6 +172,10 @@ const Contact = () => {
                           ref={field.ref}
                         />
                       </FormControl>
+                      <FormDescription className="inline-flex gap-1 items-center">
+                        <Info size={16} fill="blue" className="text-white" />
+                        Formatos de arquivo permitidos: PDF ou DOCX
+                      </FormDescription>
                       {/* <FormMessage /> */}
                     </FormItem>
                   )}

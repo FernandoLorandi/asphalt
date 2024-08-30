@@ -36,10 +36,16 @@ const SheetMenu = () => {
         </SheetHeader>
         <ul className=" items-center justify-center">
           <li className="items-center justify-center gap-2">
-            <NavItem classname="hover:bg-brand-primary-50 w-full rounded-md">
+            <NavItem
+              to="Home"
+              classname="hover:bg-brand-primary-50 w-full rounded-md"
+            >
               Início
             </NavItem>
-            <NavItem classname="hover:bg-brand-primary-50 w-full rounded-md">
+            <NavItem
+              to="Empresa"
+              classname="hover:bg-brand-primary-50 w-full rounded-md"
+            >
               Empresa
             </NavItem>
             <NavItem classname="hover:bg-brand-primary-50 w-full rounded-md">

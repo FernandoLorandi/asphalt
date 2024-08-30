@@ -9,7 +9,7 @@ type Props = {
 
 const NavItem = ({ children, classname, to, ...props }: Props) => {
   return (
-    <li className="text-slate-950 text-base font-normal hover:font-semibold hover:text-brand-primary-900  transition-all ">
+    <ul className="text-slate-950 text-base font-normal hover:font-semibold hover:text-brand-primary-900  transition-all ">
       <Link
         to={to}
         className={`py-2 px-2 inline-block ${classname}`}
@@ -17,7 +17,7 @@ const NavItem = ({ children, classname, to, ...props }: Props) => {
       >
         {children}
       </Link>
-    </li>
+    </ul>
   );
 };
 export default NavItem;
