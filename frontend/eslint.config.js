@@ -11,6 +11,7 @@ export default tseslint.config(
       js.configs.recommended,
       ...tseslint.configs.recommended,
       "plugin:react/recommended",
+      "plugin:prettier/recommended",
     ],
     files: ["**/*.{ts,tsx}"],
     languageOptions: {

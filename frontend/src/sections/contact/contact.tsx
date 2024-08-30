@@ -4,7 +4,7 @@ import { z } from "zod";
 
 import { Textarea } from "@/components/ui/textarea";
 import { Button } from "@/components/ui/button";
-import { Info, MoveRight } from "lucide-react";
+import { Info } from "lucide-react";
 import { Input } from "@/components/ui/input";
 
 import {
@@ -14,7 +14,6 @@ import {
   FormField,
   FormItem,
   FormLabel,
-  FormMessage,
 } from "@/components/ui/form";
 
 const phoneRegex = new RegExp(
