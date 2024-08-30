@@ -86,9 +86,9 @@ const Contact = () => {
 
   return (
     <div className="w-full py-24 border-y border-slate-200 bg-slate-50">
-      <div className="container flex flex-col space-y-10">
+      <div className="container gap-10 flex flex-row justify-between">
         {/* titulo */}
-        <div className="flex flex-col gap-1">
+        <div className="flex flex-col gap-1 w-full">
           <p className="text-brand-primary-600 font-semibold text-sm uppercase">
             Construindo caminhos
           </p>
@@ -96,22 +96,22 @@ const Contact = () => {
             Trabalhe conosco
           </h2>
           <p className="text-slate-600 font-normal mt-2">
-            Preencha os campos abaixo para entrar em contato.
+            Preencha os campos ao lado para entrar em contato.
           </p>
         </div>
         {/* form */}
-        <div className="flex spa">
-          <div className="w-full">
+        <div className="w-full ">
+          <div>
             <Form {...form}>
               <form
                 onSubmit={form.handleSubmit(onSubmit)}
-                className="grid grid-flow-dense md:grid-cols-2 md:grid-rows-3 lg:grid-cols-12 xl:grid-cols-12 gap-8"
+                className="flex flex-col gap-4"
               >
                 <FormField
                   control={form.control}
                   name="name"
                   render={({ field }) => (
-                    <FormItem className="col-span-1 md:col-span-6">
+                    <FormItem>
                       <FormLabel>Nome completo</FormLabel>
                       <FormControl>
                         <Input
@@ -120,7 +120,38 @@ const Contact = () => {
                           {...field}
                         />
                       </FormControl>
-                      <FormMessage />
+                      {/* <FormMessage /> */}
+                    </FormItem>
+                  )}
+                />
+
+                <FormField
+                  control={form.control}
+                  name="email"
+                  render={({ field }) => (
+                    <FormItem>
+                      <FormLabel>Digite seu e-mail</FormLabel>
+                      <FormControl>
+                        <Input
+                          type="text"
+                          placeholder="Digite seu e-mail"
+                          {...field}
+                        />
+                      </FormControl>
+                      {/* <FormMessage /> */}
+                    </FormItem>
+                  )}
+                />
+                <FormField
+                  control={form.control}
+                  name="phone"
+                  render={({ field }) => (
+                    <FormItem>
+                      <FormLabel>Telefone</FormLabel>
+                      <FormControl>
+                        <Input type="text" placeholder="(  )" {...field} />
+                      </FormControl>
+                      {/* <FormMessage /> */}
                     </FormItem>
                   )}
                 />
@@ -128,7 +159,7 @@ const Contact = () => {
                   control={form.control}
                   name="file"
                   render={({ field }) => (
-                    <FormItem className="grid md:col-span-6">
+                    <FormItem>
                       <FormLabel htmlFor="file">Selecione o arquivo</FormLabel>
                       <FormControl>
                         <Input
@@ -140,24 +171,7 @@ const Contact = () => {
                           ref={field.ref}
                         />
                       </FormControl>
-                      <FormMessage />
-                    </FormItem>
-                  )}
-                />
-                <FormField
-                  control={form.control}
-                  name="email"
-                  render={({ field }) => (
-                    <FormItem className="col-span-1 md:col-span-6">
-                      <FormLabel>Digite seu e-mail</FormLabel>
-                      <FormControl>
-                        <Input
-                          type="text"
-                          placeholder="Digite seu e-mail"
-                          {...field}
-                        />
-                      </FormControl>
-                      <FormMessage />
+                      {/* <FormMessage /> */}
                     </FormItem>
                   )}
                 />
@@ -165,7 +179,7 @@ const Contact = () => {
                   control={form.control}
                   name="bio"
                   render={({ field }) => (
-                    <FormItem className="grid md:col-span-6 h-auto">
+                    <FormItem>
                       <FormLabel htmlFor="file">Escreva sua mensagem</FormLabel>
                       <FormControl>
                         <Textarea
@@ -174,29 +188,14 @@ const Contact = () => {
                           {...field}
                         />
                       </FormControl>
-                      <FormMessage />
+                      {/* <FormMessage /> */}
                     </FormItem>
                   )}
                 />
-                <FormField
-                  control={form.control}
-                  name="phone"
-                  render={({ field }) => (
-                    <FormItem className="col-span-1 md:col-span-6">
-                      <FormLabel>Telefone</FormLabel>
-                      <FormControl>
-                        <Input type="text" placeholder="(  )" {...field} />
-                      </FormControl>
-                      <FormMessage />
-                    </FormItem>
-                  )}
-                />
-
                 <Button
                   type="submit"
                   size="sm"
-                  className="grid md:col-span-6
-                 gap-2 rounded-sm bg-brand-primary-950 hover:bg-brand-primary-900"
+                  className="gap-2 rounded-sm bg-brand-primary-950 hover:bg-brand-primary-900"
                 >
                   Enviar
                 </Button>
