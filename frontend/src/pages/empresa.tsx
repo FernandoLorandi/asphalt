@@ -28,7 +28,9 @@ const Empresa = () => {
               </BreadcrumbList>
             </Breadcrumb>
           </div>
-          <div className="text-slate-950 text-4xl font-bold">Sobre nós</div>
+          <div className="text-slate-950 text-2xl md:text-4xl font-bold">
+            Sobre nós
+          </div>
         </div>
       </div>
       <About />

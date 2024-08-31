@@ -28,7 +28,7 @@ const CardServicos = ({ title, description }: Props) => {
           <Button
             size="sm"
             variant="outline"
-            className="bg-inherit text-brand-primary-950 rounded-sm font-medium w-a gap-2"
+            className="bg-inherit text-brand-primary-950 rounded-sm border-brand-primary-950 font-medium w-a gap-2"
           >
             Saiba mais
             <ArrowRight

@@ -1,11 +1,12 @@
 import AboutGalery from "@/sections/about/aboutGalery";
 import Team from "./team";
+import Principles from "./principles";
 const About = () => {
   return (
     <>
-      <div className="container grid grid-cols-2 md:grid-cols-12 lg:grid-cols-12 gap-12 py-12">
+      <div className="container grid grid-cols-2 md:grid-cols-12 lg:grid-cols-12 gap-12 py-8 md:py-12">
         <div className="col-span-2 md:col-span-6 lg:col-span-6">
-          <p className="text-sm md:text-base leading-relaxed text-slate-950">
+          <p className="text-base md:text-base leading-relaxed text-slate-950">
             Fundada em 1º de agosto de 1991 pelo engenheiro Cesar José
             Fernandez, a Asphalt surgiu com o{" "}
             <strong>
@@ -49,6 +50,7 @@ const About = () => {
         </div>
         <AboutGalery />
       </div>
+      <Principles />
       <div>
         <Team />
       </div>
