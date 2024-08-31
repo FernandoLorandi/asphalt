@@ -1,5 +1,11 @@
 import CardServicos from "./cardServicos";
 
+const list = [
+  {
+    img: "./public/img/copel.png",
+  },
+];
+
 const Servicos = () => {
   return (
     <div className="mx-auto flex flex-col lg:flex-row md:flex-col border-t border-slate-200">

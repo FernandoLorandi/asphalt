@@ -19,7 +19,11 @@ const TeamMembers = ({
   return (
     <div className="flex flex-row gap-2 md:items-center">
       <Avatar className="h-14 w-14 md:h-16 md:w-16">
-        <AvatarImage src={avatarImg} alt="teste" {...prop}></AvatarImage>
+        <AvatarImage
+          src={avatarImg}
+          alt={`Imagem do membro do time ${name}`}
+          {...prop}
+        ></AvatarImage>
         <AvatarFallback>{avatarFallBack}</AvatarFallback>
       </Avatar>
       <div className="flex flex-col gap-0">
