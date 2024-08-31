@@ -1,5 +1,5 @@
 import AboutGalery from "@/sections/about/aboutGalery";
-
+import Team from "./team";
 const About = () => {
   return (
     <>
@@ -49,7 +49,9 @@ const About = () => {
         </div>
         <AboutGalery />
       </div>
-      <div></div>
+      <div>
+        <Team />
+      </div>
     </>
   );
 };
