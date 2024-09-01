@@ -1,12 +1,23 @@
 import { Newspaper } from "lucide-react";
 import CardBlog from "./cardBlog";
 
+const timestamp = Date.now();
+
+const data = new Intl.DateTimeFormat("pt-BR", {
+  year: "numeric",
+  month: "2-digit",
+  day: "2-digit",
+}).format(timestamp);
+
 const Blog = () => {
   return (
     <>
-      <div className="mt-10 bg-brand-secondary-500 py-10 border-t-8 border-brand-primary-950">
+      <div
+        id="blog"
+        className="mt-10 bg-brand-secondary-500 py-10 border-t-8 border-brand-primary-950"
+      >
         <div className="container flex flex-col">
-          <span className="text-white font-light mb-3 italic">Data</span>
+          <span className="text-white text-sm font-normal mb-3">{data}</span>
           <span className=" text-4xl text-white font-semibold inline-flex items-center gap-3">
             <Newspaper size={32} strokeWidth={1} />
             Noticias e blog

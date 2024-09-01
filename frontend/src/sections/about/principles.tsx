@@ -4,7 +4,7 @@ const Principles = () => {
       <div className="grid md:grid-cols-4">
         <div className="col-span-2 py-14 bg-brand-secondary-500 max-w pr-12">
           <div
-            className="flex flex-col gap-3 ml-8 2xl:ml-56 xl:ml-12
+            className="flex flex-col gap-3 ml-8 2xl:ml-64 xl:ml-12
            lg:pl-0"
           >
             <h2 className="text-white text-2xl font-semibold">Missão</h2>

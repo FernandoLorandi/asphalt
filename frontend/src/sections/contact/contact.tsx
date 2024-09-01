@@ -85,7 +85,10 @@ const Contact = () => {
   }
 
   return (
-    <div className="w-full py-24 border-y border-slate-200 bg-slate-50">
+    <div
+      id="contato"
+      className="w-full py-24 border-y border-slate-200 bg-slate-50"
+    >
       <div className="container gap-10 flex flex-col md:flex-row justify-between">
         {/* titulo */}
         <div className="flex flex-col gap-1 w-full">

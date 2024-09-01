@@ -1,4 +1,4 @@
-import { useEffect, useRef, useState } from "react";
+import { useRef, useState } from "react";
 import { Button } from "@/components/ui/button";
 import { ArrowRight } from "lucide-react";
 
@@ -15,13 +15,19 @@ const data = [
 const CardServicos = ({ title, description }: Props) => {
   const [isHover, setIsHover] = useState(false);
   const hoverRef = useRef(null);
+  const handleScroll = () => {
+    const secao = document.getElementById("contato");
+    if (secao) {
+      secao.scrollIntoView({ behavior: "smooth"  });
+    }
+  };
 
   return (
     <div
       onMouseEnter={() => setIsHover(true)}
       onMouseLeave={() => setIsHover(false)}
       ref={hoverRef}
-      className=" border-b border-slate-200 h-auto w-auto py-6 pr-28 pl-8 lg:pl-12 md:pl-12"
+      className="border-b border-slate-200 h-auto w-auto py-6 pr-28 pl-8 lg:pl-12 md:pl-12 transition ease-out duration-500"
     >
       <div
         className={
@@ -31,7 +37,7 @@ const CardServicos = ({ title, description }: Props) => {
         <div className="space-y-6 flex flex-col">
           <div
             className={
-              isHover ? "max-w-7xl md:max-w-lg" : "max-w-7xl md:max-w-max"
+              isHover ? "max-w-7xl md:max-w-lg " : "max-w-7xl md:max-w-max"
             }
           >
             <h2 className="text-slate-950 font-semibold text-2xl"> {title}</h2>
@@ -45,6 +51,7 @@ const CardServicos = ({ title, description }: Props) => {
           </div>
           <div>
             <Button
+              onClick={handleScroll}
               size="sm"
               variant="outline"
               className="bg-inherit text-brand-primary-950 rounded-sm border-brand-primary-950 font-medium w-a gap-2"
@@ -59,12 +66,12 @@ const CardServicos = ({ title, description }: Props) => {
           </div>
         </div>
         {isHover && (
-          <div className="h-auto w-80 hidden md:flex transition">
+          <div className="h-auto md:h-auto md:w-80 hidden md:flex transition ease-out duration-500">
             {data.map((item, index) => (
               <img
                 key={index}
                 src={item.img}
-                className="border border-slate-200 rounded-md transition-all duration-200"
+                className="border bg-cover border-slate-200 rounded-md transition ease-out duration-500"
               ></img>
             ))}
           </div>

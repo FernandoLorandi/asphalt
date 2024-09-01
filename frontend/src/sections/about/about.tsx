@@ -50,8 +50,8 @@ const About = () => {
         </div>
         <AboutGalery />
       </div>
-      <Principles />
-      <div>
+      <Principles />\
+      <div className="border-b border-slate-200">
         <Team />
       </div>
     </>

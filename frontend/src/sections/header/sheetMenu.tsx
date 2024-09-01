@@ -10,7 +10,7 @@ import {
   SheetTrigger,
 } from "@/components/ui/sheet";
 import { Menu } from "lucide-react";
-import NavItem from "./navItem";
+import { NavItem, NavScroll } from "./navItems";
 import { Separator } from "@/components/ui/separator";
 
 const SheetMenu = () => {
@@ -48,18 +48,30 @@ const SheetMenu = () => {
             >
               Empresa
             </NavItem>
-            <NavItem classname="hover:bg-brand-primary-50 w-full rounded-md">
+            <NavScroll
+              to="servicos"
+              classname="hover:bg-brand-primary-50 w-full rounded-md"
+            >
               Serviços
-            </NavItem>
-            <NavItem classname="hover:bg-brand-primary-50 w-full rounded-md">
+            </NavScroll>
+            <NavScroll
+              to="compliance"
+              classname="hover:bg-brand-primary-50 w-full rounded-md"
+            >
               Compliance
-            </NavItem>
-            <NavItem classname="hover:bg-brand-primary-50 w-full rounded-md">
+            </NavScroll>
+            <NavScroll
+              to="blog"
+              classname="hover:bg-brand-primary-50 w-full rounded-md"
+            >
               Blog
-            </NavItem>
-            <NavItem classname="hover:bg-brand-primary-50 w-full rounded-md">
+            </NavScroll>
+            <NavScroll
+              to="contato"
+              classname="hover:bg-brand-primary-50 w-full rounded-md"
+            >
               Contato
-            </NavItem>
+            </NavScroll>
           </li>
         </ul>
         <SheetFooter>

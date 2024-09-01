@@ -4,10 +4,11 @@ import { Download, MoveRight } from "lucide-react";
 
 const Compliance = () => {
   return (
-    <div className=" flex flex-wrap lg:flex-nowrap  ">
+    <div className=" flex flex-wrap lg:flex-nowrap" id="compliance">
       <div className="flex flex-wrap py-14">
         <div
           className="container flex flex-wrap 2xl:ml-56
+
            xl:ml-8 lg:pl-8 md:pl-8"
         >
           <div className="flex w-full max-w-7xl flex-wrap flex-col space-y-10">

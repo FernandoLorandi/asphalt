@@ -1,8 +1,14 @@
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
-import { ArrowRight, Construction } from "lucide-react";
+import { ArrowRight, CircleChevronDownIcon, Construction } from "lucide-react";
+import { useNavigate } from "react-router-dom";
 
-const Hero = () => {
+const Hero: React.FC = () => {
+  const navigate = useNavigate();
+
+  const handleGoTo = () => {
+    navigate("/Empresa");
+  };
   return (
     <div className=" bg-slate-500 h-[600px] bg-[url('/img/background-img.png')] bg-cover ">
       <div className="container">
@@ -30,6 +36,7 @@ const Hero = () => {
                 <ArrowRight strokeWidth={2} className=" w-5 h-5"></ArrowRight>
               </Button>
               <Button
+                onClick={handleGoTo}
                 size="lg"
                 variant="outline"
                 className="bg-inherit text-white rounded-sm font-medium hidden md:flex"
@@ -39,6 +46,13 @@ const Hero = () => {
             </div>
           </div>
         </div>
+
+        <span className="inline-flex flex-col items-center gap-2 w-full justify-center md:mt-24 lg:mt-28 xl:mt-32">
+          <CircleChevronDownIcon className="items-center text-white hidden md:flex animate-bounce" />
+          <p className="text-sm text-white hidden md:flex">
+            Role para ver mais
+          </p>
+        </span>
       </div>
     </div>
   );
