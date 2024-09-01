@@ -10,7 +10,10 @@ const Hero: React.FC = () => {
     navigate("/Empresa");
   };
   return (
-    <div className=" bg-slate-500 h-[600px] bg-[url('/img/background-img.png')] bg-cover ">
+    <div
+      id="hero"
+      className=" bg-slate-500 h-[600px] bg-[url('/img/background-img.png')] bg-cover "
+    >
       <div className="container">
         <div className="grid lg:grid-cols-12 md:grid-cols-6 gap-8">
           <div className="mt-[72px] lg:col-span-6 md:col-span-5 flex flex-col items-start gap-6 lg:gap-6">

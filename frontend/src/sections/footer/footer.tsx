@@ -1,6 +1,13 @@
 import { Separator } from "@/components/ui/separator";
+import { Link as LinkRouter } from "react-router-dom";
 
 const Footer = () => {
+  const handleScroll = () => {
+    const secao = document.getElementById("hero");
+    if (secao) {
+      secao.scrollIntoView({ behavior: "smooth" });
+    }
+  };
   return (
     <div className="bg-brand-primary-950 pt-6 pb-10">
       <div className="container ">
@@ -26,13 +33,19 @@ const Footer = () => {
             <p className="text-brand-secondary-500 font-medium text-lg pb-1">
               Acesso rápido
             </p>
-            <ul className="text-white  font-light ">
-              <li className="hover:cursor-pointer hover:underline hover:decoration-solid">
+            <ul className="text-white font-light ">
+              <li
+                onClick={handleScroll}
+                className="hover:cursor-pointer hover:underline hover:decoration-solid"
+              >
                 Início
               </li>
-              <li className="hover:cursor-pointer hover:underline hover:decoration-solid">
+              <LinkRouter
+                to="Empresa"
+                className="hover:cursor-pointer hover:underline hover:decoration-solid"
+              >
                 Empresa
-              </li>
+              </LinkRouter>
               <li className="hover:cursor-pointer hover:underline hover:decoration-solid">
                 Serviços
               </li>
@@ -47,7 +60,7 @@ const Footer = () => {
         </div>
         <Separator className="mt-10 mb-10 opacity-10" />
         <span className="flex justify-center gap-4 text-white font-light text-xs">
-          <p>Todos os direitos reservado</p>
+          <p>Todos os direitos reservados</p>
           <Separator orientation="vertical" className=" h-auto opacity-10" />
           <a href="#" className=" hover:underline hover:decoration-solid">
             Politica de privacidade

@@ -60,7 +60,7 @@ const Header = () => {
                   <NavItem to="/empresa">Empresa</NavItem>
                   <NavScroll to="servicos">Serviços</NavScroll>
                   <NavScroll to="compliance">Compliance</NavScroll>
-                  <NavScroll to="blog">Blog</NavScroll>
+                  <NavItem to="Blog">Blog</NavItem>
                   <NavScroll to="contato">Contato</NavScroll>
                 </li>
               </ul>

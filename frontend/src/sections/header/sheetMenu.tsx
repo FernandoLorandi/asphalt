@@ -60,12 +60,12 @@ const SheetMenu = () => {
             >
               Compliance
             </NavScroll>
-            <NavScroll
-              to="blog"
+            <NavItem
+              to="Blog"
               classname="hover:bg-brand-primary-50 w-full rounded-md"
             >
               Blog
-            </NavScroll>
+            </NavItem>
             <NavScroll
               to="contato"
               classname="hover:bg-brand-primary-50 w-full rounded-md"

@@ -9,11 +9,11 @@ const data = new Intl.DateTimeFormat("pt-BR", {
   day: "2-digit",
 }).format(timestamp);
 
-const Blog = () => {
+const blogSection = () => {
   return (
     <>
       <div
-        id="blog"
+        id="blogSection"
         className="mt-10 bg-brand-secondary-500 py-10 border-t-8 border-brand-primary-950"
       >
         <div className="container flex flex-col">
@@ -45,4 +45,4 @@ const Blog = () => {
     </>
   );
 };
-export default Blog;
+export default blogSection;
